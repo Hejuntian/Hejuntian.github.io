@@ -1,0 +1,11 @@
+# Site settings
+title: My Blog
+email: 254586414@qq.com
+description: > # this means to ignore newlines until "baseurl:"
+ You'll Never Walk Alone  
+baseurl: "/myblog" # the subpath of your site, e.g. /blog/
+url: https://Hejuntian.github.io
+github_username:  Hejuntian
+
+# Build settings
+markdown: kramdown
