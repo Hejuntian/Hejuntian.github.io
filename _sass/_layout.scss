@@ -212,6 +212,53 @@
     background-size: cover;
 }
 
+.social-data { 
+	margin:0; padding:0; 
+	list-style:none;
+}
+
+.social-data img { 
+	border:0;
+}
+
+.social-data { 
+	width:50px; 
+	height:250px; 
+	position:fixed; 
+	left:0; 
+	top:65%; 
+	margin-top:-50px; 
+	z-index:900;
+}
+
+.social-data a:hover {
+	width:50px;
+    transform:translate(-5px,0);
+}
+
+.social-data a { 
+	width:30px;
+	height:50px; 
+	line-height:50px; 
+	float:left; 
+	display:block; 
+	text-align:center;
+	transition:transform 1s;
+}
+.social-data .social-data1 { 
+	background:#000000;
+}
+.social-data .social-data2 { 
+	background:#fefefe;
+}
+.social-data .social-data3 { 
+	background:#1963f6;
+}
+.social-data .social-data4 { 
+	background:#f0ae23;
+}
+
+
 /**
  * clock css
  */
