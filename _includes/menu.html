@@ -1,0 +1,27 @@
+<content>
+	  <menu>
+		<label for="trigger">
+		  <input id="trigger" type="checkbox" />
+		  <section class="drawer-list">
+			<ul>
+			  <li>{% for page in site.pages %}
+				  {% if page.title %}
+				  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+				  {% endif %}
+				{% endfor %}
+			  </li>
+			  <li><a href="#">contact us</a></li>
+			  <br><br><br>
+			  <img src="http://img5.cache.netease.com/sports/2016/4/15/201604151404233e90e.gif" alt= gif图片/>
+		  </ul>
+		  </section>
+		  <hamburger>
+			<i></i>
+			<text>
+			  <close>close</close>
+			  <open>menu</open>
+			</text>
+		  </hamburger>
+		</label>
+	  </menu>
+</content>
