@@ -5,13 +5,40 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}
 	<br>作者：<a class="post-author" href="{{ site.github_repo }}">{{ site.github_username }}</a>
 	</p>
   </header>
-
   <article class="post-content">
     {{ content }}
   </article>
 
 </div>
+<content>
+	  <menu>
+		<label for="trigger">
+		  <input id="trigger" type="checkbox" />
+		  <section class="drawer-list">
+			  <li>{% for page in site.pages %}
+				  {% if page.title %}
+				  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+				  {% endif %}
+				{% endfor %}
+			  </li>
+			  <li><a href="#">contact us</a></li>
+			  <br><br><br>
+			  <img src="http://img5.cache.netease.com/sports/2016/4/15/201604151404233e90e.gif" alt= gif图片/>
+		  </ul>
+		  </section>
+		  <hamburger>
+			<i></i>
+			<text>
+			  <close>close</close>
+			  <open>menu</open>
+			</text>
+		  </hamburger>
+		</label>
+	  </menu>
+</content>
+
+	
