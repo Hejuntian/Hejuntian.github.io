@@ -120,10 +120,13 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: -1px;
     font-style: italic;
-
+	margin-left:30%;
+	max-width:540px;
+	background-color:#f4f7f6;
+	
     > :last-child {
         margin-bottom: 0;
     }
@@ -199,3 +202,4 @@ div {
 footer {
     flex:0 0 auto;
 }
+
