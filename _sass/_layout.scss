@@ -161,11 +161,8 @@
 
     .highlight {
         font-family: Consolas;
-        color: #333;
+        color: #297d38;
         z-index: -1;
-        background: #fafafd;
-        border: 0.063em solid #dedede;
-        border-right: 0em solid #fff;
         line-height: 1.5em;
         padding-top: 1em;
         padding-bottom: 1em;
@@ -196,11 +193,14 @@
     font-size: 36px;
     color: #444;
     padding: 10px;
+	transition:color 1s;
 }
 
 .home a:hover {
-    background: #fafafd;
+    background: #ebf3f3;
     outline:  1px solid #C3D5E4;
+	animation: pulse 1s 1s infinite alternate both;
+	color:#fff;
 }
 
 .home  a::before {
@@ -708,3 +708,12 @@ menu hamburger > i:after {
 	padding:15px;
 }
 
+@keyframes pulse {
+	50%{text-shadow:0 0 5px #ffe6a7;
+		box-shadow:0px -1px 10px 10px #ffe6a7;
+	}
+	100%{
+		text-shadow:0 0 5px #b4f5ff;
+		box-shadow:0px -1px 10px 10px #b4f5ff;
+	}
+}

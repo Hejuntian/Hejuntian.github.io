@@ -122,10 +122,10 @@ blockquote {
     padding-left: $spacing-unit / 2;
     font-size: 15px;
     letter-spacing: -1px;
-    font-style: italic;
-	margin-left:30%;
+	margin:0 auto;
 	max-width:540px;
 	background-color:#f4f7f6;
+	font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	
     > :last-child {
         margin-bottom: 0;
@@ -143,12 +143,16 @@ pre {
     line-height: 1.3em;
     margin: 0px auto;
     padding: 0 10px;
+	background-color:#efefef;
+	border:1px solid #bbbbbb;
 }
 
 code {
-    background: #fafafd;
-    padding: 0.063em;
-    border: 0.063em solid #dedede;
+    background: #efefef;
+    padding: 2px 4px;
+	font-family:Menlo,Monaco,Consolas,Courier New,monospace;
+	color:#657b83;
+	font-size:12px;
 }
 
 /**
@@ -202,4 +206,5 @@ div {
 footer {
     flex:0 0 auto;
 }
+
 

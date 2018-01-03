@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Web网页设计作品集
-permalink: /profile/
+permalink: /portfolio/
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
