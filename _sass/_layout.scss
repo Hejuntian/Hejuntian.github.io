@@ -190,7 +190,7 @@
 
 .home  a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
+    font-size: 26px;
     color: #444;
     padding: 10px;
 	transition:color 1s;
@@ -200,7 +200,7 @@
     background: #ebf3f3;
     outline:  1px solid #C3D5E4;
 	animation: pulse 1s 1s infinite alternate both;
-	color:#fff;
+	color:#fefefe;
 }
 
 .home  a::before {
@@ -595,9 +595,11 @@ menu .drawer-list li a {
   display: block;
   padding: .5rem;
   font-size: 1.2em;
+  transition:box-shadow 3s;
 }
 menu .drawer-list img{
-  margin-bottom:10px;  
+  margin:40px auto;
+	width:100%;
 }
 @media (min-width: 768px) {
   menu .drawer-list li a {
@@ -609,6 +611,7 @@ menu .drawer-list li a:hover {
   cursor: pointer;
   background-color: #88c2f8;
   background-color: rgba(255, 255, 255, 0.42);
+  box-shadow:inset -940px 0px 20px 10px #91e0f5;
 }
 menu hamburger {
   position: absolute;
@@ -709,11 +712,36 @@ menu hamburger > i:after {
 }
 
 @keyframes pulse {
-	50%{text-shadow:0 0 5px #ffe6a7;
-		box-shadow:0px -1px 10px 10px #ffe6a7;
-	}
-	100%{
+	50%{
 		text-shadow:0 0 5px #b4f5ff;
 		box-shadow:0px -1px 10px 10px #b4f5ff;
+		color:#a2d0d7;
 	}
+	100%{
+		text-shadow:0 0 5px #ffe6a7;
+		box-shadow:0px -1px 10px 10px #ffe6a7;
+		color:#dcba62;
+	}
+}
+
+@media screen and (max-width : 920px) {
+	.hours, .minutes, .seconds{
+	display:none;
+	}
+}
+@media screen and (max-width : 580px) {
+	header{
+		font-size:10px;
+		}
+	.site-name__inner{	
+		    .name{ 
+			font-size:65px;
+		}
+		
+	}
+}
+@media screen and (max-width : 410px) {
+	header{
+		font-size:0px;
+		}
 }
