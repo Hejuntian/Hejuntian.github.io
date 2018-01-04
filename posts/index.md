@@ -14,6 +14,6 @@ permalink: /post/
 ---
 
 ### 信息可视化笔记：
-- 
+- [Tableau技巧：巧妙制作混合地图](visualization/2018/01/04/make-blend-map.html)   2018-01-04
 
 
