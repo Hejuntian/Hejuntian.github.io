@@ -2,7 +2,7 @@
 layout: post
 title:  "WSG4第12章部分翻译"
 date:   2018-01-03
-categories: post/rwd
+categories: rwd
 ---
 
 ### 选择散播渠道 CHOOSING A DISTRIBUTION CHANNEL

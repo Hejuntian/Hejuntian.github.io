@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Web网页设计作品集
+title: 网页设计作品集
 permalink: /portfolio/
 ---
 

@@ -6,18 +6,15 @@
   <body>
 	
 	<header class="site-header">
-
 		<div class="wrapper">
-
-			<nav class="site-nav">
-				{% for page in site.pages %}
-				  {% if page.title %}
-				  <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-				  {% endif %}
-				{% endfor %}
+			<nav class="site-nav">				  
+				  <a class="page-link" href="/about/">关于</a>
+				  <a class="page-link" href="/posts/">文章</a>
+				  <a class="page-link" href="/portfolio/">网页设计作品集</a>
+				  <a class="page-link" href="/infovis/">信息可视化作品集</a>
+				  <a class="page-link" href="http://wcy.nfu.edu.cn/zh/%E5%AD%A6%E9%99%A2%E6%A6%82%E5%86%B5/%E6%96%B0%E5%AA%92%E4%BD%93%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83/">文学与传媒学院</a>
 			</nav>
-		</div>
-	  
+		</div>  
     </header>
 	
     <div class="cover">

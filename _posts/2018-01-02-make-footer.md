@@ -2,7 +2,7 @@
 layout: post
 title:  "CSS 技巧 -- 制作粘性页脚的最佳方式"
 date:   2018-1-2
-categories: post/rwd
+categories: rwd
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Tableau技巧：巧妙制作混合地图"
 date:   2018-01-04
-categories: post/visualization
+categories: infovis
 ---
 
 
@@ -10,7 +10,7 @@ categories: post/visualization
 
 先创建了一个填充地图，“地区”以颜色分省市填充地图如下：设置好地理角色后，双击国家下钻到省份，将地区拖到颜色中，在标记卡中修改图形类型为“填充地图”
 
-![image](https://pic1.zhimg.com/v2-2dfd4765a0f9e0a45459b03689d71d4a_r.jpg)
+![image](../../../../../images/make_blend_map_article_image1.jpg)
 
 为了使工作表中多一个维度，她把“度量窗口”中的“纬度（生成）”再次拖放到行功能区中，此时同时展示了两个地图。
 
@@ -18,17 +18,17 @@ categories: post/visualization
 
 为了使工作表中多一个维度，她把“度量窗口”中的“纬度（生成）”再次拖放到行功能区中，此时同时展示了两个地图。选择双轴，两个地图重叠为一个。
 
-![image](https://pic3.zhimg.com/50/v2-42606585356b3b3a4249494aca08dbba_hd.jpg)
+![image](../../../../../images/make_blend_map_article_image2.jpg)
 
 #### 三、将其中一个地图改为符号地图
 
 可以看到在“标记”卡中生成了两个切换条，为了“维度（生成）”和“维度（生成）（2）”，代表了地图的两个图层。于是她选择“维度（生成）（2）”，修改图形类型为圆，并拖放“利润”到标记卡中的“颜色”中，“销售额”到“大小”，就得到了下面这样的图。
 
-![image](https://pic4.zhimg.com/50/v2-8687fdeb2b92923376fe8b88a1b4bf1b_hd.jpg)
+![image](../../../../../images/make_blend_map_article_image3.jpg)
 
 
 再进行一些小的设置，如加边界、调整大小等，混合地图就完成了。
 
-![image](https://pic1.zhimg.com/50/v2-cb5fc5df5a5b07d22e81cbef143de0fb_hd.jpg)
+![image](../../../../../images/make_blend_map_article_image4.jpg)
 
 简单操作就能实现地图三维信息展示的小技巧，你get到了吗？

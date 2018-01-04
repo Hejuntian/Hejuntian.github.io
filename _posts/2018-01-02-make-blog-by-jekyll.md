@@ -2,7 +2,7 @@
 layout: post
 title:  "使用Jekyll快速搭建个人博客"
 date:   2018-01-03
-categories: post/rwd
+categories: rwd
 ---
 
 ## 介绍
