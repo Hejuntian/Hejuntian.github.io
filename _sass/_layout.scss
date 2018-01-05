@@ -726,12 +726,19 @@ menu hamburger > i:after {
 
 @media screen and (max-width : 920px) {
 	.hours, .minutes, .seconds{
-	display:none;
+		display:none;
+	}
+	.site-name {
+		margin:0 40%;
+	}
+	.site-name__inner{	
+		width:100%;
+		top:100px;
 	}
 }
 @media screen and (max-width : 580px) {
 	header{
-		font-size:10px;
+		font-size:11px;
 		}
 	.site-name__inner{	
 		    .name{ 
@@ -744,4 +751,20 @@ menu hamburger > i:after {
 	header{
 		font-size:0px;
 		}
+	.social-data {
+		position:absolute;
+		width:250px;
+		top:65px;
+		left:10px;
+	}
 }
+
+
+/**
+ * item_title
+ */ 
+.item_title{
+	background:linear-gradient(#f9c77d,#FFEB3B,#f9c77d); 
+	font-size:20px;
+}
+

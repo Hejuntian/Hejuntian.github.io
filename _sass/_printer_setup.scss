@@ -1,0 +1,56 @@
+/*
+   Printer Setup
+   ========================================================================== */
+@page {
+   size: A4;
+   margin: 0;
+}
+ 
+ @media print {
+     #masthead,nav, button, html [type=button], .menu-screen ,.cover,header,menu,.social-data{
+         display: none;
+     }
+     html, body {
+         width: 210mm;
+         height: 297mm;
+         margin: 0;
+         padding: 0;
+         border: 1px #D3D3D3 solid;
+		 border-radius: 5px;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		 display:flex;
+     }
+     .page-wrapper {
+         border: initial;
+         border-radius: initial;
+         width: initial;
+         min-height: initial;
+         box-shadow: initial;
+         background: initial;
+         page-break-after: always;
+         max-width: 220mm;
+         min-height: 220mm;
+         max-height: 237mm;
+         padding: 10mm;
+         margin: 20mm 10mm;
+ 		 border: 1px white dotted;
+   		 height: 237mm;
+ 		 outline: 2cm #cbecff solid;
+ 	}
+	.site-footer{
+		margin:10mm;
+	}
+ 
+ 
+ 
+ 		
+      p {
+ 	    font-size: 0.625rem !important;		
+ 	}
+ 	h1 {
+ 	    font-size: 1rem !important;		
+ 	}
+ 	h2, h3, h4, h5, h6 {
+ 	    font-size: 0.75rem !important;		
+ 	}
+ }
