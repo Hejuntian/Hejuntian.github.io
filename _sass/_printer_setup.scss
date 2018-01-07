@@ -7,7 +7,7 @@
 }
  
  @media print {
-     #masthead,nav, button, html [type=button], .menu-screen ,.cover,header,menu,.social-data{
+     #masthead,nav, button, html [type=button], .menu-screen ,.cover,.site-header,menu,.social-data{
          display: none;
      }
      html, body {
@@ -19,6 +19,7 @@
 		 border-radius: 5px;
          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 		 display:flex;
+
      }
      .page-wrapper {
          border: initial;
@@ -39,6 +40,16 @@
  	}
 	.site-footer{
 		margin:10mm;
+	}
+	.post{
+         max-height: 180mm;
+	blockquote{
+		font-size:0.5px;
+		}
+ 	}
+	.tableauPlaceholder{
+		max-height:150mm;
+		max-width:180mm;
 	}
  
  

@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "使用Jekyll快速搭建个人博客"
-date:   2018-01-03
+date:   2018-01-02
 categories: rwd
+description: "简述使用jekyll搭建博客的过程"
 ---
+简述使用jekyll搭建博客的过程
 
 ## 介绍
 

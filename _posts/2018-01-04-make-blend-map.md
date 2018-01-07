@@ -3,6 +3,7 @@ layout: post
 title:  "Tableau技巧：巧妙制作混合地图"
 date:   2018-01-04
 categories: infovis
+description: "使用tableau制作混合地图的小技巧"
 ---
 
 

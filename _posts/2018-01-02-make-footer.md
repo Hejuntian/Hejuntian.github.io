@@ -3,6 +3,8 @@ layout: post
 title:  "CSS 技巧 -- 制作粘性页脚的最佳方式"
 date:   2018-1-2
 categories: rwd
+description: "使用弹性布局制作页脚的方法"
+img: make_footer_image1.png
 ---
 
 
@@ -12,7 +14,7 @@ categories: rwd
 
 当开发网页布局的时候，有时可能会遇到下面的问题
 
-<img src="https://upload-images.jianshu.io/upload_images/2849764-7034938ca2df92c5.png" >
+![image](../../../../../images/make_footer_image1.png)
 
 很明显破坏布局的情形发生了，当你把 <code>footer</code> 固定的放在了 <code>body</code> 的末尾，但是页面却没有足够多的内容。因为没有任何东西能将 <code>footer</code>压下去，所以它被放置在了屏幕的中部，在底下留下了一大块空白。
 
@@ -27,7 +29,7 @@ categories: rwd
     <footer>...</footer>
 	
 为了使用 flex 模型，我们向 <code>body</code> 中添加 <code>display: flex</code>， 而且将主轴改为纵轴（默认的主轴是横轴，是水平布局）。另外，<code>html</code> 和 <code>body</code> 需要 100% 的高度去撑满整个屏幕。
-
+```
     html{
         height: 100%;
     }
@@ -37,7 +39,7 @@ categories: rwd
         flex-direction: column;
         height: 100%;
     }
-	
+```	
 下面我们应该调整每个模块应该占据的空间，我们可以通过 <code>flex</code> 属性去做这件事，它是一个由三个 <code>flex-</code> 属性糅合而成的属性。
 
 
@@ -46,7 +48,7 @@ categories: rwd
 - flex-basis: 一个元素的默认尺寸。
 
 我们想让 <code>header</code> 和 <code>footer</code>仅占据它们所需要的空间就足够了，而余下的空间全部都留给主 section 那部分。这种布局的 CSS 看起来像下面这样 ：
-
+```
     header {
         flex: 0 0 auto;
     }
@@ -58,16 +60,16 @@ categories: rwd
     footer {
         flex:0 0 auto;
     }
-	
+```	
 为了演示这个技巧的功能，让我们通过下面的图片看看效果。
 
-<img src="https://upload-images.jianshu.io/upload_images/2849764-1a044f4b353a38ad.png" >
+![image](../../../../../images/make_footer_image2.png)
 
 为了看到以上效果，我们还需要添加以下代码用于消除各元素的默认 <code>padding</code> 和 <code>margin</code>
-
+```
     {
         margin: 0;
         padding: 0;
     }
-    
+```  
 Ending ...
