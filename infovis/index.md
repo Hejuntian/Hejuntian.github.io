@@ -33,4 +33,4 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);
 2.从条形图来看，苏宁的数量最多，沃尔玛数量最少；苏宁、国美电器城的数量明显高于家乐福、沃尔玛超市的数量<br>
 3.从突出显示表来看，国美在广东省分布最多；苏宁在江苏省分布最多，主要原因是苏宁的总部位于江苏省；家乐福在上海市分布最多，而宁夏回族自治区和西藏自治区没有数据显示；沃尔玛在广东省分布最多<br>
 
-- <p class="item_title"><a href="https://690244957.github.io/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/Tableau.html">期中小组专题</a></p>
+- <p class="item_title"><a href="../qzzt/index.html">期中小组专题</a></p>
