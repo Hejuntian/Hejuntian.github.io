@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- 设置当前HTML文件的字符编码 -->
+    <meta charset="utf-8">
+    <!-- 设置浏览器的兼容模式版本（让IE使用最新的渲染引擎工作） -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 声明当前网页在移动端浏览器中展示的设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>nba资讯</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+  <header class="navbar navbar-inverse">
+  
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+        <li><a href="https://china.nba.com/news/">新闻</a></li>
+        <li><a href="https://china.nba.com/photos/">图集</a></li>
+        <li><a href="https://china.nba.com/videos/">视频</a></li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">数据 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li role="separator" class="divider"></li>
+            <li><a href="https://china.nba.com/statistics/">球员数据</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://china.nba.com/statistics/teamstats/">球队数据</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://china.nba.com/statistics/advancedteamstats/">高级球队数据</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://china.nba.com/statistics/leagueleaders/">联盟数据王</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <button type="button" class="btn btn-default navbar-btn">手机版</button>
+        <button type="button" class="btn btn-default navbar-btn">收藏本站</button>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="输入你需要搜索的内容">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  
+</header> 
+
+<div id="imageShow" style="width:"80%"">
+  <div id="imgshow_mask"></div>
+  <ul class="imagebg" id="imagebg">
+    <a  href="http://nbachina.qq.com/a/20181207/000753.htm" >
+      <li class="bannerbg" data-sPic="images/lunbotu_1s.jpg" style="background:black url(images/lunbotu_1.jpg) center no-repeat;">    
+      <h2 style="text-align:center" >新秀榜：东契奇勉强居首 3J惊喜冲击</h2>
+      </li>
+    </a>
+    
+    <a  href="http://nbachina.qq.com/a/20181206/015032.htm" >
+    <li class="bannerbg" data-sPic="images/lunbotu_2s.jpg" width="14px" height="5px" style="background:black url(images/lunbotu_2.jpg) center no-repeat;">    
+      <h2 style="text-align:center" >阿杜：勒布朗身边媒体环境有毒 但非他之错</h2>
+      </li>
+    </a>
+    
+    <a  href="http://nbachina.qq.com/a/20181206/007151.htm" >
+    <li class="bannerbg" data-sPic="images/lunbotu_3s.jpg" width="14px" height="5px" style="background:black url(images/lunbotu_3.jpg) center no-repeat;">    
+      <h2 style="text-align:center" >乔治47+15准绝杀威少三双 雷霆23分逆转篮网</h2>
+      </li>
+    </a>
+    
+    <a  href="http://nbachina.qq.com/a/20181206/005917.htm" >
+    <li class="bannerbg" data-sPic="images/lunbotu_4s.jpg" width="14px" height="5px" style="background:black url(images/lunbotu_4.jpg) center no-repeat;">    
+      <h2 style="text-align:center" >库里42分9记三分 勇士客场轻取骑士</h2>
+      </li>
+    </a>
+    
+    <a  href="http://nbachina.qq.com/a/20181206/007293.htm" >
+    <li class="bannerbg" data-sPic="images/lunbotu_5s.jpg" width="14px" height="5px" style="background:black url(images/lunbotu_5.jpg) center no-repeat;">    
+      <h2 style="text-align:center" >兰德尔27+18浓眉27+9 鹈鹕26分大胜独行侠</h2>
+      </li>
+    </a>
+    
+    <a  href="http://nbachina.qq.com/a/20181207/007655.htm" >
+    <li class="bannerbg" data-sPic="images/lunbotu_6s.jpg" width="14px" height="5px" style="background:black url(images/lunbotu_6.jpg) center no-repeat;">    
+      <h2 style="text-align:center" >欧文22分绿军七人上双 复仇尼克斯获四连胜</h2>
+      </li>
+    </a>
+    
+  </ul>
+  <div class="scrollbg">
+    <div class="scroll"> <a id="left_img_btn" class="s_pre" href="javascript:void(0)"></a>
+      <div class="current" id="current"></div>
+      <div class="outScroll_pic">
+        <ul class="scroll_pic cls" id="small_pic">
+        </ul>
+      </div>
+      <a id="right_img_btn" class="s_next" href="javascript:void(0)"></a> </div>
+  </div>
+</div>
+
+<!--焦点图结束-->
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.imgSlider.js"></script>
+
+<script type="text/javascript">
+img.init();
+img.play(0);
+//阻止事件冒泡
+function estop(e){
+	var e=arguments.callee.caller.arguments[0]||event;
+	if (e && e.stopPropagation){
+	//因此它支持W3C的stopPropagation()方法
+	   e.stopPropagation();
+	}else{
+	//否则，我们需要使用IE的方式来取消事件冒泡
+	   window.event.cancelBubble = true;
+	   return false;
+	}
+}
+</script>
+
+  <div class="news-title"> <h1>新闻资讯</h1></div>
+  <div class="news-area" style="overflow:hidden">
+    <div class="main-news">    
+        <ul class='news-list'>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/010249.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/108/106/2299/149519613.jpg" width="100px" height="70px">
+                <span>单枪匹马扭改战局 詹皇末节狂飙强无敌</span>
+            </a>
+          </li>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/009525.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/76/104/2299/149519071.jpg" width="100px" height="70px">
+                <span>6日数据酷：威少三双数超越基德独霸第三</span>
+            </a>
+          </li>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/008905.htm">
+               <img src="http://img1.gtimg.com/chinanba/pics/hv1/7/103/2299/149518747.jpg" width="100px" height="70px">
+              <span>38分赛季新高 吉米为费城青年军注入坚韧</span>
+            </a>
+          </li>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/008905.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/11/130/2299/149525636.jpg" width="100px" height="70px">
+              <span>欧文22分绿军七人上双 复仇尼克斯获四连胜</span>
+            </a>
+          </li>
+        </ul>
+      
+    </div>
+    <div class="main-news">    
+        <ul class='news-list'>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/010249.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/108/106/2299/149519613.jpg" width="100px" height="70px">
+                <span>单枪匹马扭改战局 詹皇末节狂飙强无敌</span>
+            </a>
+          </li>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/009525.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/76/104/2299/149519071.jpg" width="100px" height="70px">
+                <span>6日数据酷：威少三双数超越基德独霸第三</span>
+            </a>
+          </li>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/008905.htm">
+               <img src="http://img1.gtimg.com/chinanba/pics/hv1/7/103/2299/149518747.jpg" width="100px" height="70px">
+              <span>38分赛季新高 吉米为费城青年军注入坚韧</span>
+            </a>
+          </li>
+          <li class="the-news">
+            <a href="http://nbachina.qq.com/a/20181206/008905.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/11/130/2299/149525636.jpg" width="100px" height="70px">
+              <span>欧文22分绿军七人上双 复仇尼克斯获四连胜</span>
+            </a>
+          </li>
+        </ul>      
+    </div>
+    
+    <div class="nba_pic" style="margin:0; padding:0">
+        <img src="images/nba.jpg" width="280px" height="240px" >
+    </div>
+    
+    <div class="main-news-2">
+        <ul class="news-list-2">
+          <li><a href="http://nbachina.qq.com/a/20181207/008975.htm">利拉德25+5+8三节打卡 开拓者送太阳7连败</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181207/001777.htm">英格拉姆将做核磁检查并将缺席两客场比赛胜</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181207/001568.htm">曝火箭队与加里-克拉克达成三年370万合同</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181207/000697.htm">骑士汤普森因对球迷手势不当被罚1.5万美元</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/015032.htm">阿杜：勒布朗身边媒体环境有毒 但非他之错</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/014849.htm">掘金前锋哈里斯因膝伤被列入每日观察名单</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/014774.htm">白边解释提前离场：我憋不住了要上卫生间</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/012218.htm">末节杀死比赛 詹姆斯：喜欢承担这样的责任</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/011839.htm">生涯第9次20+5+5 维金斯：找回自己太好了</a></li>
+       </ul>
+    </div>  
+    <div class="main-news-2">
+        <ul class="news-list-2">
+          <li><a href="http://nbachina.qq.com/a/20181207/008975.htm">利拉德25+5+8三节打卡 开拓者送太阳7连败</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181207/001777.htm">英格拉姆将做核磁检查并将缺席两客场比赛胜</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181207/001568.htm">曝火箭队与加里-克拉克达成三年370万合同</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181207/000697.htm">骑士汤普森因对球迷手势不当被罚1.5万美元</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/015032.htm">阿杜：勒布朗身边媒体环境有毒 但非他之错</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/014849.htm">掘金前锋哈里斯因膝伤被列入每日观察名单</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/014774.htm">白边解释提前离场：我憋不住了要上卫生间</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/012218.htm">末节杀死比赛 詹姆斯：喜欢承担这样的责任</a></li>
+          <li><a href="http://nbachina.qq.com/a/20181206/011839.htm">生涯第9次20+5+5 维金斯：找回自己太好了</a></li>
+       </ul>
+    </div>    
+  </div>
+  
+  <div class="pic-title"><h1>图集</h1></div>
+  <div class="pic-area" style="overflow:hidden">
+    <div class="main-pics">
+        <ul class="pics-list" >
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181207/009742.htm">
+              <img src="http://img1.gtimg.com/21/2154/215423/21542370_1200x1000_0.jpg" width="350px" height="230px"> 
+              <p>常规赛：爵士118-91火箭 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/007792.htm">
+              <img src="http://img1.gtimg.com/21/2154/215413/21541346_1200x1000_0.jpg" width="350px" height="230px"> 
+              <p>常规赛：灰熊96-86快船 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/006499.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/147/97/2299/149517357.jpg" width="350px" height="230px"> 
+              <p>常规赛：雄鹿115-92活塞 图集</p>
+            </a>          
+          </li>
+       </ul>    
+    </div>
+    <div class="main-pics">
+        <ul class="pics-list" >
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181207/008696.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/8/133/2299/149526398.jpg" width="350px" height="230px"> 
+              <p>常规赛：太阳86-108开拓者 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/007618.htm">
+              <img src="http://img1.gtimg.com/21/2154/215413/21541322_1200x1000_0.jpg" width="350px" height="230px"> 
+              <p>常规赛：鹈鹕132-106独行侠 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/005196.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/151/93/2299/149516341.jpg" width="350px" height="230px"> 
+              <p>常规赛：森林狼121-104黄蜂 图集</p>
+            </a>          
+          </li>
+       </ul>    
+    </div>
+    <div class="main-pics">
+        <ul class="pics-list" >
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181207/007005.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/19/128/2299/149525134.jpg" width="350px" height="230px"> 
+              <p>常规赛：尼克斯100-128凯尔特人 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/007609.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/31/100/2299/149518006.jpg" width="350px" height="230px"> 
+              <p>常规赛：76人102-113猛龙 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/004887.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/233/92/2299/149516168.jpg" width="350px" height="230px"> 
+              <p>常规赛：掘金124-118魔术（OT） 图集</p>
+            </a>          
+          </li>
+       </ul>    
+    </div>
+    <div class="main-pics">
+        <ul class="pics-list" >
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/009501.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/164/103/2299/149518904.jpg" width="350px" height="230px"> 
+              <p>常规赛：马刺113-121湖人 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/007071.htm">
+              <img src="http://img1.gtimg.com/21/2154/215412/21541218_1200x1000_0.jpg" width="350px" height="230px"> 
+              <p>常规赛：雷霆114-112篮网 图集</p>
+            </a>          
+          </li>
+          <li class="the-pic">
+            <a href="http://nbachina.qq.com/a/20181206/004308.htm">
+              <img src="http://img1.gtimg.com/chinanba/pics/hv1/220/90/2299/149515645.jpg" width="350px" height="230px"> 
+              <p>常规赛：奇才131-117老鹰 图集</p>
+            </a>          
+          </li>
+       </ul>    
+    </div>   
+  </div>
+  
+  <div class="footer">
+    <div id="copyright-wrap">
+    <div id="copyright-tab">
+        <div class="copyright-tab">
+            <div class="tab-list">
+                <p>关于</p>
+                <a href="http://www.nbastore.cn/"><p>NBA Store</p></a>
+                <a href="http://www.nba.com/careers/"><p>NBA就职机会</p></a>
+            </div>
+            <div class="tab-list">
+                <p>NBA赛事</p>
+                <a href="https://china.nba.com/draft/"><p>选秀大会</p></a>
+                <a href="http://www.jrnba.com.cn/"><p>jr.NBA高中赛</p></a>
+            </div>
+            <div class="tab-list">
+                <p>专题</p>
+                <a href="https://china.nba.com/2017agency/index.htm"><p>休赛季转会</p></a>
+                <a href="https://china.nba.com/topics/association.htm"><p>联盟的骄傲</p></a>
+                <a href="https://china.nba.com/cny/index.htm"><p>新春贺岁</p></a>
+                <a href="https://china.nba.com/topics/summerofslam.htm"><p>扣响盛夏</p></a>
+            </div>
+            <div class="tab-list">
+                <p>NBA101</p>
+                <a href="https://china.nba.com/topics/history.htm"><p>NBA历史</p></a>
+                <a href="https://china.nba.com/topics/50players.htm"><p>NBA50大球星</p></a>
+                <a href="https://china.nba.com/topics/faq/index.htm"><p>NBA知识Q&amp;A</p></a>
+            </div>
+            <div class="tab-sports-app">
+                <p>腾讯体育</p>
+                <img src="http://mat1.gtimg.com/chinanba/web/statics/footer-sports-qrcode_c4a619.png">
+            </div>
+            <div class="tab-nba-app">
+                <p>NBA官方应用</p>
+                <img src="http://mat1.gtimg.com/chinanba/web/statics/footer-nba-qrcode_689c63.png">
+            </div>
+        </div>
+    </div>
+    <div id="copyright-content">
+        <div class="copyright-content">
+            <p><em>©</em>2018年著作权 NBA 中国所有权。</p>
+            <p><a target="_blank" href="https://china.nba.com/">NBA.com/China</a>上除去<a target="_blank" href="http://nbachina.qq.com/a/20150623/047888.htm">使用条款</a>中所特别提及的部分之外，其它任何内容都不得以任何形式被复制、再传播，或篡改。</p>
+            <p>进入<a target="_blank" href="https://china.nba.com/">NBA.com/China</a>后，即表示阁下同意遵守<a target="_blank" href="https://china.nba.com/">NBA.com/China</a>的<a target="_blank" href="http://nbachina.qq.com/a/20150623/047968.htm">隐私政策</a>和<a target="_blank" href="http://nbachina.qq.com/a/20150623/047888.htm">使用条款</a>。</p>
+            <p>有任何的建议和意见，都欢迎联络我们：<a href="mailto:NBAChinaInfo@nba.com">NBAChinaInfo@nba.com</a></p>
+            <p>有关NBA商品授权合作事宜，敬请联系:<a href="mailto:GMGChinaBusinessInquiry@nba.com">GMGChinaBusinessInquiry@nba.com</a></p>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+  
+  
+
+	
+	
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    
+
+  </body>
+</html>

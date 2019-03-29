@@ -4,84 +4,416 @@
     <title>My Blog</title>
     <description>You'll Never Walk Alone  
 </description>
-    <link>http://localhost:4000/myblog/</link>
-    <atom:link href="http://localhost:4000/myblog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Dec 2017 22:25:51 +0800</pubDate>
-    <lastBuildDate>Sat, 30 Dec 2017 22:25:51 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 29 Mar 2019 22:53:12 +0800</pubDate>
+    <lastBuildDate>Fri, 29 Mar 2019 22:53:12 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
-        <title>笔记</title>
-        <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
+        <title>六种基本图表的特点和适用场合</title>
+        <description>&lt;p&gt;“数据可视化”可以帮助用户理解数据，一直是热门方向。图表是“数据可视化”的常用手段，其中又以基本图表——柱状图、折线图、饼图等等最为常用。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　用户非常熟悉这些图表，但如果被问道，它们的特点是什么，最适用怎样的场合(数据集)?恐怕答得上来的人就不多了。&lt;/p&gt;
+
+&lt;h3 id=&quot;一柱状图bar-chart&quot;&gt;　　一、柱状图(Bar Chart)&lt;/h3&gt;
+
+&lt;p&gt;柱状图是最常见的图表，也最容易解读。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　它的适用场合是二维数据集(每个数据点包括两个值x和y)，但只有一个维度需要比较。年销售额就是二维数据，”年份”和”销售额”就是它的两个维度，但只需要比较”销售额”这一个维度。&lt;/p&gt;
+
+&lt;p&gt;　　柱状图利用柱子的高度，反映数据的差异。肉眼对高度差异很敏感，辨识效果非常好。柱状图的局限在于只适用中小规模的数据集。&lt;/p&gt;
+
+&lt;p&gt;　　通常来说，柱状图的X轴是时间维，用户习惯性认为存在时间趋势。如果遇到X轴不是时间维的情况，建议用颜色区分每根柱子，改变用户对时间趋势的关注。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　上图是英国足球联赛某个年度各队的赢球场数，X轴代表不同球队，Y轴代表赢球数。&lt;/p&gt;
+
+&lt;h3 id=&quot;二折线图line-chart数据&quot;&gt;　　二、折线图(Line Chart)数据&lt;/h3&gt;
+
+&lt;p&gt;　　折线图适合二维的大数据集，尤其是那些趋势比单个数据点更重要的场合。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　它还适合多个二维数据集的比较。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image5.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　上图是两个二维数据集(大气中二氧化碳浓度，地表平均气温)的折线图。&lt;/p&gt;
+
+&lt;h3 id=&quot;三饼图pie-chart&quot;&gt;　　三、饼图(Pie Chart)&lt;/h3&gt;
+
+&lt;p&gt;　　饼图是一种应该避免使用的图表，因为肉眼对面积大小不敏感。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image6.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　上图中，左侧饼图的五个色块的面积排序，不容易看出来。换成柱状图，就容易多了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image7.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　一般情况下，总是应该用柱状图替代饼图。但是有一个例外，就是反映某个部分占整体的比重，比如贫穷人口占总人口的百分比。&lt;/p&gt;
+
+&lt;h3 id=&quot;四散点图scatter-chart&quot;&gt;　　四、散点图(Scatter Chart)&lt;/h3&gt;
+
+&lt;p&gt;　　散点图适用于三维数据集，但其中只有两维需要比较。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image8.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　上图是各国的医疗支出与预期寿命，三个维度分别为国家、医疗支出、预期寿命，只有后两个维度需要比较。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image9.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　为了识别第三维，可以为每个点加上文字标示，或者不同颜色。&lt;/p&gt;
+
+&lt;h3 id=&quot;五气泡图bubble-chart&quot;&gt;　　五、气泡图(Bubble Chart)&lt;/h3&gt;
+
+&lt;p&gt;　　气泡图是散点图的一种变体，通过每个点的面积大小，反映第三维。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image10.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　上图是卡特里娜飓风的路径，三个维度分别为经度、纬度、强度。点的面积越大，就代表强度越大。因为用户不善于判断面积大小，所以气泡图只适用不要求精确辨识第三维的场合。&lt;/p&gt;
+
+&lt;p&gt;　　如果为气泡加上不同颜色(或文字标签)，气泡图就可用来表达四维数据。比如下图就是通过颜色，表示每个点的风力等级。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image11.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;六雷达图radar-chart&quot;&gt;　　六、雷达图(Radar Chart)&lt;/h3&gt;
+
+&lt;p&gt;　　雷达图适用于多维数据(四维以上)，且每个维度必须可以排序(国籍就不可以排序)。但是，它有一个局限，就是数据点最多6个，否则无法辨别，因此适用场合有限。&lt;/p&gt;
+
+&lt;p&gt;　　下面是迈阿密热火队首发的五名篮球选手的数据。除了姓名，每个数据点有五个维度，分别是得分、篮板、助攻、抢断、封盖。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image12.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　画成雷达图，就是下面这样。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/chart_type_image13.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;　　面积越大的数据点，就表示越重要。很显然，勒布朗·詹姆斯(红色区域)是热火队最重要的选手。&lt;/p&gt;
+
+&lt;p&gt;　　需要注意的时候，用户不熟悉雷达图，解读有困难。使用时尽量加上说明，减轻解读负担。&lt;/p&gt;
 </description>
-        <pubDate>Mon, 25 Dec 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/myblog/jekyll/update/2017/12/25/try.html</link>
-        <guid isPermaLink="true">http://localhost:4000/myblog/jekyll/update/2017/12/25/try.html</guid>
+        <pubDate>Sun, 07 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/infovis/2018/01/07/chart-type.html</link>
+        <guid isPermaLink="true">http://localhost:4000/infovis/2018/01/07/chart-type.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>infovis</category>
         
       </item>
     
       <item>
-        <title>A Clean Jekyll theme</title>
-        <description>&lt;p&gt;##Subheading
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. Cras sit amet porta quam. Donec eu gravida elit. Sed a diam eget sem lacinia maximus vel et elit. Nullam id egestas nulla. Duis dapibus at quam eu dapibus. Maecenas ullamcorper placerat eros, eu posuere enim bibendum eget. Phasellus mollis enim molestie tortor aliquam, nec auctor ligula &lt;code class=&quot;highlighter-rouge&quot;&gt;fringilla&lt;/code&gt;.&lt;/p&gt;
+        <title>Tableau技巧：如何插入自定义形状</title>
+        <description>&lt;p&gt;我们先来了解一下Tableau里的形状是什么。&lt;/p&gt;
 
-&lt;p&gt;##Sample Code&lt;/p&gt;
+&lt;p&gt;在标记卡里的下拉菜单中，选择“形状”，然后点击“形状卡”，会出现Tableau自带的一些形状。
+&lt;img src=&quot;../../../../../images/make_shapes_image.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;p&gt;如果，我们需要的形状，Tableau里面没有，该怎么办呢？&lt;/p&gt;
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;p&gt;找到想要的形状&lt;/p&gt;
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([]&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;p&gt;首先得找到想要的形状，以图片的形式保存到电脑中，例如下面的这个太阳图形。
+&lt;img src=&quot;../../../../../images/make_shapes_image1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:3000&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;把形状放入存储库&lt;/p&gt;
 
-&lt;p&gt;##List&lt;/p&gt;
+&lt;p&gt;把这个形状的图片放到Tableau存储库中的形状文件夹中（一般在我的文档里），如下图：
+&lt;img src=&quot;../../../../../images/make_shapes_image2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;添加文件夹并命名&lt;/p&gt;
+
+&lt;p&gt;在形状文件夹中，能看到很多文件夹，这些都是Tableau自带的形状。
+&lt;img src=&quot;../../../../../images/make_shapes_image3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接着，添加一个新的文件来摆放我们的“形状”。
+&lt;img src=&quot;../../../../../images/make_shapes_image4.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;把文件夹命名为太阳，并把图片放到里面。&lt;/p&gt;
+
+&lt;p&gt;这时候，试着打开一个新的Tableau工作簿，打开形状标记卡，看看里面的变化。
+&lt;img src=&quot;../../../../../images/make_shapes_image5.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;可以看到，太阳形状已经插入到Tableau的形状包里面了。需要用到太阳形状时，打开形状包选中它即可哦！&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/infovis/2018/01/06/make-shapes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/infovis/2018/01/06/make-shapes.html</guid>
+        
+        
+        <category>infovis</category>
+        
+      </item>
+    
+      <item>
+        <title>Tableau技巧：巧妙制作混合地图</title>
+        <description>&lt;h4 id=&quot;一创建填充地图&quot;&gt;一、创建填充地图&lt;/h4&gt;
+
+&lt;p&gt;先创建了一个填充地图，“地区”以颜色分省市填充地图如下：设置好地理角色后，双击国家下钻到省份，将地区拖到颜色中，在标记卡中修改图形类型为“填充地图”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/make_blend_map_article_image1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为了使工作表中多一个维度，她把“度量窗口”中的“纬度（生成）”再次拖放到行功能区中，此时同时展示了两个地图。&lt;/p&gt;
+
+&lt;h4 id=&quot;二形成两个地图并合并&quot;&gt;二、形成两个地图并合并&lt;/h4&gt;
+
+&lt;p&gt;为了使工作表中多一个维度，她把“度量窗口”中的“纬度（生成）”再次拖放到行功能区中，此时同时展示了两个地图。选择双轴，两个地图重叠为一个。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/make_blend_map_article_image2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;三将其中一个地图改为符号地图&quot;&gt;三、将其中一个地图改为符号地图&lt;/h4&gt;
+
+&lt;p&gt;可以看到在“标记”卡中生成了两个切换条，为了“维度（生成）”和“维度（生成）（2）”，代表了地图的两个图层。于是她选择“维度（生成）（2）”，修改图形类型为圆，并拖放“利润”到标记卡中的“颜色”中，“销售额”到“大小”，就得到了下面这样的图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/make_blend_map_article_image3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;再进行一些小的设置，如加边界、调整大小等，混合地图就完成了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/make_blend_map_article_image4.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;简单操作就能实现地图三维信息展示的小技巧，你get到了吗？&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/infovis/2018/01/04/make-blend-map.html</link>
+        <guid isPermaLink="true">http://localhost:4000/infovis/2018/01/04/make-blend-map.html</guid>
+        
+        
+        <category>infovis</category>
+        
+      </item>
+    
+      <item>
+        <title>WSG4第12章部分翻译</title>
+        <description>&lt;h3 id=&quot;选择散播渠道-choosing-a-distribution-channel&quot;&gt;选择散播渠道 CHOOSING A DISTRIBUTION CHANNEL&lt;/h3&gt;
+&lt;p&gt;P.348&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,谢冠岚&lt;/code&gt; 
+有两种方法可以查看如YouTube和Vimeo在线视频传送工具：
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;ul&gt;
+            &lt;li&gt;人们通过专门搜索或者通过浏览You Tube 或者Vimeo 的首页和特色页面当前流行的内容以及你自己的You Tube 或者Vimeo “渠道” 来访问浏览和查找内容可以作为“渠道”&lt;/li&gt;
+            &lt;li&gt;作为嵌入式视频在您自己的网站中播放, 但来源于Vimeo 或 YouTube&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,谢冠岚&lt;/code&gt; 
+Facebook 是另一个主要的短片视频的传递渠道。Facebook 不是专门用于视频的主要目标站点, 但它是目前主流的社交媒体, 应该是视频内容活动的主要组成部分。你也可以在你的网站嵌入Facebook 的视频和文章。&lt;/li&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,谢冠岚&lt;/code&gt; 
+所有三种表现形式应该在您的视频分发策略中有一席之地, 因为 Facebook、Vimeo 和 YouTube 有不同的方法、不同的强项和不同的观众组合。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;youtube&quot;&gt;YouTube&lt;/h3&gt;
+&lt;p&gt;p.349&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,王志伟&lt;/code&gt;
+YouTube目前是在线视频发行的主要渠道，而YouTube也是互联网上第二大最常用的搜索平台，仅次于谷歌本身的YouTube公司的母公司。如果你想让你的视频作品被发现和注意，你必须把它张贴在YouTube上。然而，这并不意味着YouTube是上传视频内容的唯一甚至第一个地方。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,王志伟&lt;/code&gt;
+除了是最流行的视频分销渠道，YouTube也是免费的。因为YouTube是通过在线广告的投资，如果你想赚钱你的视频内容通过放置广告在YouTube和谷歌合作伙伴计划是最好的选择。YouTube作为搜索平台的优势，意味着你的视频内容更容易通过网络搜索被发现，尤其是如果你总是提供视频的完整转录以及视频文件本身（见上文关于视听转录的更多信息）。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,陈嘉劲&lt;/code&gt;
+YouTube是一个庞大的、免费的、广告商支持的网站，这也是YouTube作为发行媒介的最大缺点。YouTube是一种视觉上的嘈杂，充斥着低等级的家庭视频，并且竭尽所能吸引你的观众，让他们在每个视频的最后看到其他“相关”(也许是竞争)的内容。默认情况下，YouTube不会在高质量的环境下显示你精心制作的视频。是的，有知识的观众可以轻松地选择更高质量的设置，但大多数用户不知道能够设置，也不知道如何设置。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,陈嘉劲&lt;/code&gt;
+在一个分销渠道的竞争中，每一分钟都有上百小时的视频被上传，而YouTube本身就是通过不断曝光观众的”相关内容”来蚕食你的观众的。在营销视频中，相互竞争的公司在对方的名字和品牌上购买广告词并不罕见，希望能将观众从相互竞争的产品和服务中转移出来。对于企业对企业(B2B)通信来说，YouTube的分销渠道也很复杂，因为许多公司和大型机构都将YouTube内容从其内部网络中屏蔽。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,何丽华&lt;/code&gt; 
+为了最大限度地利用YouTube网站本身，开发您的YouTube频道页面会仔细管理和优先排列你所拥有的视频内容。将为你的频道提供专业优质的封面及专业人员用最新的视频更新频道内容，监控频道的评论，以及关于航道交通等级的报告。根据您喜的视频标题和标签来搜索关键字和引擎优化。为每个视频提供一个准确的编辑后的记录，这些记录你可以连同你的视频上传。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;vimeo&quot;&gt;Vimeo&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,罗畅明&lt;/code&gt; 
+ Vimeo是YouTube上操作和观看在线视频的主要替代品。虽然Vimeo是比YouTube小得多的公司，但Vimeo却热衷于在视频制作行业中遵循高质量的视频演示服务。
+…&lt;/li&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,罗畅明&lt;/code&gt; 
+Vimeo是一个非常小众的在线视频服务和分销渠道，Vimeo是一个非常不起眼的在线视频服务商和分销途径，主要是因为它属于有偿服务，在它的视频内容中并不会出现广告或者是在视频内容周围放出广告。Vimeo的内容是免费开放的，但是如果你经常制作和上传视频，你可能会选择一种Vimeo的付费服务去上传和展示自己的视频。Vimeo这种像医疗费式的收费服务削减了YouTube几乎所有的低质量的家庭视频和暴躁猫——对专业公司的强烈吸引力机构营销和信息录像。
+…&lt;/li&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,罗畅明&lt;/code&gt; 
+Vimeo吸引富有媒体经验的通信专业人员。这比YouTube的播放器更小众，更容易控制，尤其是有能力嵌入视频与高品质的视频的设置，使视频在一般情况下，它看起来是最好的。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;p.350&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,何俊添&lt;/code&gt;
+对于媒体专业人士来说，另一个强大的吸引力是Vimeo能够对影片进行密码保护，使其成为与客户分享草稿版本的理想手段，而不会将草稿暴露给更大的网络视频观众。 在YouTube上，您可以上传视频并选择一个选项，以使从搜索和频道显示中保持视频“私密”，但“私密”的YouTube视频没有密码，任何碰巧发现他们的人都可以看到。 使用Vimeo Pro服务，您还可以保留一些视频，以便按需付费观看或购买。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul class=&quot;task-list&quot;&gt;
+    &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C,何俊添&lt;/code&gt;
+不利的一面是，虽然Vimeo的观众人数相当多，但与YouTube的巨大的全球观众相比却微不足道。您的视频节目被广大观众发现的机会在Vimeo上要低得多，而且您无法通过和YouTube视频一样的方式吸引观众获得广告收入。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 03 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/rwd/2018/01/03/a-part-of-WSG4_ch12.html</link>
+        <guid isPermaLink="true">http://localhost:4000/rwd/2018/01/03/a-part-of-WSG4_ch12.html</guid>
+        
+        
+        <category>rwd</category>
+        
+      </item>
+    
+      <item>
+        <title>CSS 技巧 -- 制作粘性页脚的最佳方式</title>
+        <description>&lt;p&gt;转自：&lt;a href=&quot;http://note.youdao.com/&quot;&gt;简书&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这是一篇翻译文，&lt;a href=&quot;https://tutorialzine.com/2016/03/quick-tip-the-best-way-to-make-sticky-footers&quot;&gt;原文地址&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;当开发网页布局的时候，有时可能会遇到下面的问题&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/make_footer_image1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;很明显破坏布局的情形发生了，当你把 &lt;code&gt;footer&lt;/code&gt; 固定的放在了 &lt;code&gt;body&lt;/code&gt; 的末尾，但是页面却没有足够多的内容。因为没有任何东西能将 &lt;code&gt;footer&lt;/code&gt;压下去，所以它被放置在了屏幕的中部，在底下留下了一大块空白。&lt;/p&gt;
+
+&lt;h2 id=&quot;the-technique&quot;&gt;The Technique&lt;/h2&gt;
+
+&lt;p&gt;为了防止上述情况的发生，我们可以使用 &lt;code&gt;flexbox&lt;/code&gt; 构造我们的页面，这是CSS3 为我们创建自适应布局提供的最先进的工具。 如果你对 &lt;code&gt;flexbox&lt;/code&gt; 模型和它的属性不是很熟悉，我将会在本文的末尾提供一组链接。&lt;/p&gt;
+
+&lt;p&gt;我们最简单的页面 demo 应该会包含&lt;code&gt;header&lt;/code&gt;，主&lt;code&gt;section&lt;/code&gt; 和 &lt;code&gt;footer&lt;/code&gt;, 下面是 HTML, 没有任何额外的东西。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;header&amp;gt;...&amp;lt;/header&amp;gt; 
+&amp;lt;section class=&quot;main-content&quot;&amp;gt;...&amp;lt;/section&amp;gt; 
+&amp;lt;footer&amp;gt;...&amp;lt;/footer&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;为了使用 flex 模型，我们向 &lt;code&gt;body&lt;/code&gt; 中添加 &lt;code&gt;display: flex&lt;/code&gt;， 而且将主轴改为纵轴（默认的主轴是横轴，是水平布局）。另外，&lt;code&gt;html&lt;/code&gt; 和 &lt;code&gt;body&lt;/code&gt; 需要 100% 的高度去撑满整个屏幕。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    html{
+        height: 100%;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;下面我们应该调整每个模块应该占据的空间，我们可以通过 &lt;code&gt;flex&lt;/code&gt; 属性去做这件事，它是一个由三个 &lt;code&gt;flex-&lt;/code&gt; 属性糅合而成的属性。&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Do this&lt;/li&gt;
-  &lt;li&gt;Do that&lt;/li&gt;
-  &lt;li&gt;Bla Bla Bla&lt;/li&gt;
-  &lt;li&gt;Go to Sleep&lt;/li&gt;
+  &lt;li&gt;flex-grow: 用于指定容器中的元素能够分到多少可用的空闲空间。&lt;/li&gt;
+  &lt;li&gt;flex-shrink: 元素应该削减多少当空间不足以放置所有东西。&lt;/li&gt;
+  &lt;li&gt;flex-basis: 一个元素的默认尺寸。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##Links
-&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
+&lt;p&gt;我们想让 &lt;code&gt;header&lt;/code&gt; 和 &lt;code&gt;footer&lt;/code&gt;仅占据它们所需要的空间就足够了，而余下的空间全部都留给主 section 那部分。这种布局的 CSS 看起来像下面这样 ：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    header {
+        flex: 0 0 auto;
+    }
 
+    section {
+        flex: 1 0 auto;
+    }
+
+    footer {
+        flex:0 0 auto;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;为了演示这个技巧的功能，让我们通过下面的图片看看效果。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../../../images/make_footer_image2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为了看到以上效果，我们还需要添加以下代码用于消除各元素的默认 &lt;code&gt;padding&lt;/code&gt; 和 &lt;code&gt;margin&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    {
+        margin: 0;
+        padding: 0;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ending …&lt;/p&gt;
 </description>
-        <pubDate>Sun, 27 Sep 2015 02:51:59 +0800</pubDate>
-        <link>http://localhost:4000/myblog/jekyll/update/2015/09/26/clean-theme.html</link>
-        <guid isPermaLink="true">http://localhost:4000/myblog/jekyll/update/2015/09/26/clean-theme.html</guid>
+        <pubDate>Tue, 02 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/rwd/2018/01/02/make-footer.html</link>
+        <guid isPermaLink="true">http://localhost:4000/rwd/2018/01/02/make-footer.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>rwd</category>
         
       </item>
     
       <item>
-        <title>Hello</title>
-        <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
+        <title>使用Jekyll快速搭建个人博客</title>
+        <description>&lt;p&gt;简述使用jekyll搭建博客的过程&lt;/p&gt;
+
+&lt;h2 id=&quot;介绍&quot;&gt;介绍&lt;/h2&gt;
+
+&lt;p&gt;jekyll是一个静态站点生成器，会根据网页源码生成静态文件。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;简单。无需数据库，评论功能，不需要不断更新版本，只用关注你的博客内容&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;静态。只用Markdown(或者Textile)、Liquid、HTML&amp;amp;CSS就可以构建可部署的静态网站&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;博客形态。自定义地址、分类页面、分类博客内容以及自定义的布局设计&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用GitHub Pages可以运行jekyll，很简单就可以完全免费的在GitHub上发布网站&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;环境配置&quot;&gt;环境配置&lt;/h2&gt;
+
+&lt;p&gt;1.注册Github账号，并新建仓库&lt;a href=&quot;http://blog.csdn.net/p10010/article/details/51336332&quot;&gt;教程第一部分内容,照做即可&lt;/a&gt;&lt;br /&gt;
+2.下载安装Git,&lt;a href=&quot;http://gitforwindows.org/&quot;&gt;git for Windows&lt;/a&gt;,&lt;a href=&quot;https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html&quot;&gt;安装教程&lt;/a&gt;&lt;br /&gt;
+3.安装Ruby &amp;amp; Devkit, Window 系统下，我们可以使用 RubyInstaller 来安装Ruby 环境，&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;下载地址&lt;/a&gt;,&lt;a href=&quot;https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html&quot;&gt;安装教程&lt;/a&gt;&lt;br /&gt;
+4.配置jekyll环境(前提是你的电脑有Python、easy_install)&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;安装 jekyll&lt;/p&gt;
+
+&lt;blockquote&gt;$ gem install jekyll&lt;/blockquote&gt;
+
+&lt;p&gt;创建博客&lt;/p&gt;
+
+&lt;blockquote&gt;$ jekyll new myBlog&lt;/blockquote&gt;
+
+&lt;p&gt;进入博客目录&lt;/p&gt;
+
+&lt;blockquote&gt;$ cd myBlog&lt;/blockquote&gt;
+&lt;p&gt;启动本地服务&lt;/p&gt;
+
+&lt;blockquote&gt;$ jekyll serve&lt;/blockquote&gt;
+&lt;p&gt;在浏览器里输入： http://localhost:4000，就可以看到你的博客效果了。&lt;/p&gt;
 </description>
-        <pubDate>Sat, 26 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/myblog/jekyll/update/2015/09/26/hello.html</link>
-        <guid isPermaLink="true">http://localhost:4000/myblog/jekyll/update/2015/09/26/hello.html</guid>
+        <pubDate>Tue, 02 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/rwd/2018/01/02/make-blog-by-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/rwd/2018/01/02/make-blog-by-jekyll.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>rwd</category>
         
       </item>
     

@@ -11,3 +11,5 @@ permalink: /portfolio/
 
 - [足球滚动](../portfolio/football_animation/)<br> 
 ![足球滚动](../../images/football_animation_image.jpg)
+
+- [互动技术与设计-期中网页设计](../wangzhan/index.html)

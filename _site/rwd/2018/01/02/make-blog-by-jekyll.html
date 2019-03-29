@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>使用Jekyll快速搭建个人博客</title>
+  <meta name="description" content="简述使用jekyll搭建博客的过程">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/rwd/2018/01/02/make-blog-by-jekyll.html">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="http://localhost:4000/feed.xml" />
+  <link rel="shortcut icon" href="/favicon.ico" >
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">My Blog</a>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">使用Jekyll快速搭建个人博客</h1>
+    <p class="post-meta">Jan 2, 2018
+	<br>作者：<a href="https://github.com/Hejuntian/Hejuntian.github.io">Hejuntian</a>&emsp;
+	标签：<a href="http://localhost:4000/posts/rwd">rwd</a>
+	</p>
+  </header>
+  <article class="post-content">
+    <p>简述使用jekyll搭建博客的过程</p>
+
+<h2 id="介绍">介绍</h2>
+
+<p>jekyll是一个静态站点生成器，会根据网页源码生成静态文件。</p>
+
+<ul>
+  <li>
+    <p>简单。无需数据库，评论功能，不需要不断更新版本，只用关注你的博客内容</p>
+  </li>
+  <li>
+    <p>静态。只用Markdown(或者Textile)、Liquid、HTML&amp;CSS就可以构建可部署的静态网站</p>
+  </li>
+  <li>
+    <p>博客形态。自定义地址、分类页面、分类博客内容以及自定义的布局设计</p>
+  </li>
+  <li>
+    <p>使用GitHub Pages可以运行jekyll，很简单就可以完全免费的在GitHub上发布网站</p>
+  </li>
+</ul>
+
+<h2 id="环境配置">环境配置</h2>
+
+<p>1.注册Github账号，并新建仓库<a href="http://blog.csdn.net/p10010/article/details/51336332">教程第一部分内容,照做即可</a><br />
+2.下载安装Git,<a href="http://gitforwindows.org/">git for Windows</a>,<a href="https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html">安装教程</a><br />
+3.安装Ruby &amp; Devkit, Window 系统下，我们可以使用 RubyInstaller 来安装Ruby 环境，<a href="https://rubyinstaller.org/downloads/">下载地址</a>,<a href="https://jingyan.baidu.com/article/020278117cbe921bcc9ce51c.html">安装教程</a><br />
+4.配置jekyll环境(前提是你的电脑有Python、easy_install)<br /></p>
+
+<p>安装 jekyll</p>
+
+<blockquote>$ gem install jekyll</blockquote>
+
+<p>创建博客</p>
+
+<blockquote>$ jekyll new myBlog</blockquote>
+
+<p>进入博客目录</p>
+
+<blockquote>$ cd myBlog</blockquote>
+<p>启动本地服务</p>
+
+<blockquote>$ jekyll serve</blockquote>
+<p>在浏览器里输入： http://localhost:4000，就可以看到你的博客效果了。</p>
+
+  </article>
+
+
+</div>
+
+    </div>
+	
+	<content>
+	  <menu>
+		<label for="trigger">
+		  <input id="trigger" type="checkbox" />
+		  <section class="drawer-list">
+			<ul>
+			  <li>
+				  
+				  <a class="page-link" href="/about/">关于</a>
+				  
+				
+				  
+				
+				  
+				
+				  
+				  <a class="page-link" href="/portfolio/word_animation/">文字动画</a>
+				  
+				
+				  
+				  <a class="page-link" href="/portfolio/">网页设计作品集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/posts/infovis/">信息可视化笔记</a>
+				  
+				
+				  
+				  <a class="page-link" href="/posts/rwd/">网页设计笔记</a>
+				  
+				
+				  
+				  <a class="page-link" href="/portfolio/football_animation/">足球滚动</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/ai_works/">AI作品合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/axure_works/">AXURE设计合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/ps_works/">PS作品合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/video_works/">视频作品合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/">其他作品集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/infovis/">信息可视化作品集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/posts/">文章</a>
+				  
+				
+				  
+				
+			  </li>
+			  <li><a href="mailto:254586414@qq.com"">联系我</a></li>
+			  <br><br><br>
+			  <img src="../../../../../images/menu_gif_klopp.gif" alt= gif图片/>
+		  </ul>
+		  </section>
+		  <hamburger>
+			<i></i>
+			<text>
+			  <close>close</close>
+			  <open>menu</open>
+			</text>
+		  </hamburger>
+		</label>
+	  </menu>
+</content>
+
+	
+	<footer class="site-footer">
+	中山大学南方学院 <a href = 'http://wcy.nfu.edu.cn/zh/教学教务/培养方案/网络与新媒体/'>网络与新媒体</a> 培养方案核心课程学期作品，由 <a href='http://wcy.nfu.edu.cn/zh/学院概况/师资队伍/廖汉腾/'>廖汉腾副教授</a> 指导
+	<br>Copyright © 2018 
+	<a href = "https://github.com/Hejuntian/Hejuntian.github.io">Hejuntian</a>&emsp;
+	Powerd by 
+	<a href = "https://jekyllrb.com/">Jekyll</a> + <a href="http://knaman2609.github.io/clean/">clean</a>
+	<br>我的邮箱:254586414@qq.com
+	<br>Y.N.W.A.
+</footer>
+  </body>
+
+</html>

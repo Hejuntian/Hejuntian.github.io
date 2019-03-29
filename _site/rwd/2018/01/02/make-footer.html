@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSS 技巧 -- 制作粘性页脚的最佳方式</title>
+  <meta name="description" content="转自：简书">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/rwd/2018/01/02/make-footer.html">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="http://localhost:4000/feed.xml" />
+  <link rel="shortcut icon" href="/favicon.ico" >
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">My Blog</a>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">CSS 技巧 -- 制作粘性页脚的最佳方式</h1>
+    <p class="post-meta">Jan 2, 2018
+	<br>作者：<a href="https://github.com/Hejuntian/Hejuntian.github.io">Hejuntian</a>&emsp;
+	标签：<a href="http://localhost:4000/posts/rwd">rwd</a>
+	</p>
+  </header>
+  <article class="post-content">
+    <p>转自：<a href="http://note.youdao.com/">简书</a></p>
+
+<p>这是一篇翻译文，<a href="https://tutorialzine.com/2016/03/quick-tip-the-best-way-to-make-sticky-footers">原文地址</a>。</p>
+
+<p>当开发网页布局的时候，有时可能会遇到下面的问题</p>
+
+<p><img src="../../../../../images/make_footer_image1.png" alt="image" /></p>
+
+<p>很明显破坏布局的情形发生了，当你把 <code>footer</code> 固定的放在了 <code>body</code> 的末尾，但是页面却没有足够多的内容。因为没有任何东西能将 <code>footer</code>压下去，所以它被放置在了屏幕的中部，在底下留下了一大块空白。</p>
+
+<h2 id="the-technique">The Technique</h2>
+
+<p>为了防止上述情况的发生，我们可以使用 <code>flexbox</code> 构造我们的页面，这是CSS3 为我们创建自适应布局提供的最先进的工具。 如果你对 <code>flexbox</code> 模型和它的属性不是很熟悉，我将会在本文的末尾提供一组链接。</p>
+
+<p>我们最简单的页面 demo 应该会包含<code>header</code>，主<code>section</code> 和 <code>footer</code>, 下面是 HTML, 没有任何额外的东西。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;header&gt;...&lt;/header&gt; 
+&lt;section class="main-content"&gt;...&lt;/section&gt; 
+&lt;footer&gt;...&lt;/footer&gt;
+</code></pre></div></div>
+
+<p>为了使用 flex 模型，我们向 <code>body</code> 中添加 <code>display: flex</code>， 而且将主轴改为纵轴（默认的主轴是横轴，是水平布局）。另外，<code>html</code> 和 <code>body</code> 需要 100% 的高度去撑满整个屏幕。</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    html{
+        height: 100%;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+</code></pre></div></div>
+<p>下面我们应该调整每个模块应该占据的空间，我们可以通过 <code>flex</code> 属性去做这件事，它是一个由三个 <code>flex-</code> 属性糅合而成的属性。</p>
+
+<ul>
+  <li>flex-grow: 用于指定容器中的元素能够分到多少可用的空闲空间。</li>
+  <li>flex-shrink: 元素应该削减多少当空间不足以放置所有东西。</li>
+  <li>flex-basis: 一个元素的默认尺寸。</li>
+</ul>
+
+<p>我们想让 <code>header</code> 和 <code>footer</code>仅占据它们所需要的空间就足够了，而余下的空间全部都留给主 section 那部分。这种布局的 CSS 看起来像下面这样 ：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    header {
+        flex: 0 0 auto;
+    }
+
+    section {
+        flex: 1 0 auto;
+    }
+
+    footer {
+        flex:0 0 auto;
+    }
+</code></pre></div></div>
+<p>为了演示这个技巧的功能，让我们通过下面的图片看看效果。</p>
+
+<p><img src="../../../../../images/make_footer_image2.png" alt="image" /></p>
+
+<p>为了看到以上效果，我们还需要添加以下代码用于消除各元素的默认 <code>padding</code> 和 <code>margin</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    {
+        margin: 0;
+        padding: 0;
+    }
+</code></pre></div></div>
+<p>Ending …</p>
+
+  </article>
+
+
+</div>
+
+    </div>
+	
+	<content>
+	  <menu>
+		<label for="trigger">
+		  <input id="trigger" type="checkbox" />
+		  <section class="drawer-list">
+			<ul>
+			  <li>
+				  
+				  <a class="page-link" href="/about/">关于</a>
+				  
+				
+				  
+				
+				  
+				
+				  
+				  <a class="page-link" href="/portfolio/word_animation/">文字动画</a>
+				  
+				
+				  
+				  <a class="page-link" href="/portfolio/">网页设计作品集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/posts/infovis/">信息可视化笔记</a>
+				  
+				
+				  
+				  <a class="page-link" href="/posts/rwd/">网页设计笔记</a>
+				  
+				
+				  
+				  <a class="page-link" href="/portfolio/football_animation/">足球滚动</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/ai_works/">AI作品合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/axure_works/">AXURE设计合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/ps_works/">PS作品合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/video_works/">视频作品合集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/works/">其他作品集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/infovis/">信息可视化作品集</a>
+				  
+				
+				  
+				  <a class="page-link" href="/posts/">文章</a>
+				  
+				
+				  
+				
+			  </li>
+			  <li><a href="mailto:254586414@qq.com"">联系我</a></li>
+			  <br><br><br>
+			  <img src="../../../../../images/menu_gif_klopp.gif" alt= gif图片/>
+		  </ul>
+		  </section>
+		  <hamburger>
+			<i></i>
+			<text>
+			  <close>close</close>
+			  <open>menu</open>
+			</text>
+		  </hamburger>
+		</label>
+	  </menu>
+</content>
+
+	
+	<footer class="site-footer">
+	中山大学南方学院 <a href = 'http://wcy.nfu.edu.cn/zh/教学教务/培养方案/网络与新媒体/'>网络与新媒体</a> 培养方案核心课程学期作品，由 <a href='http://wcy.nfu.edu.cn/zh/学院概况/师资队伍/廖汉腾/'>廖汉腾副教授</a> 指导
+	<br>Copyright © 2018 
+	<a href = "https://github.com/Hejuntian/Hejuntian.github.io">Hejuntian</a>&emsp;
+	Powerd by 
+	<a href = "https://jekyllrb.com/">Jekyll</a> + <a href="http://knaman2609.github.io/clean/">clean</a>
+	<br>我的邮箱:254586414@qq.com
+	<br>Y.N.W.A.
+</footer>
+  </body>
+
+</html>
