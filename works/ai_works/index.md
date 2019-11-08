@@ -1,33 +1,118 @@
 ---
-layout: page
+layout: workpage
 title: AI作品合集
 permalink: /works/ai_works/
 ---
 <br>
-- ### 图标作品
-<br>
-![ai_work](../../images/ai/C.jpg)<br>(logo1)<br><br>
-![ai_work](../../images/ai/logo1.jpg)<br>(logo2)<br><br>
-![ai_work](../../images/ai/logo2.jpg)<br>(logo3)<br><br>
-![ai_work](../../images/ai/logo3.jpg)<br>(logo4)<br><br>
-![ai_work](../../images/ai/logo4.jpg)<br>(logo5)<br><br>
-![ai_work](../../images/ai/logo5_QQliulanqi.jpg)<br>(logo6-QQ浏览器)<br><br>
-![ai_work](../../images/ai/logo6_hp.jpg)<br>(logo7-惠普)<br><br>
-![ai_work](../../images/ai/sound.jpg)<br>(logo8)<br><br>
-![ai_work](../../images/ai/baidu_carlife.jpg)<br>(logo9-百度carlife)<br><br>
-![ai_work](../../images/ai/baidu_music.jpg)<br>(logo10-百度音乐)<br><br>
-![ai_work](../../images/ai/baiduyun.jpg)<br>(logo11-百度云)<br><br>
-![ai_work](../../images/ai/switch.jpg)<br>(logo12-开关键)<br><br>
-![ai_work](../../images/ai/liantong.jpg)<br>(logo13-联通)<br><br>
-![ai_work](../../images/ai/apple.jpg)<br>(logo14-苹果)<br><br>
-![ai_work](../../images/ai/weixin.jpg)<br>(logo15-微信)<br><br>
-![ai_work](../../images/ai/china_bank.jpg)<br>(logo16-中国银行)<br><br>
 
+<h2><b style="border-bottom:solid">图标作品</b></h2>
 <br>
-- ### 插图作品
+<div style="margin:50px auto">
+	<img src="../../images/ai/C.jpg">
+	<p style="margin-top:20px">(logo1)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/logo1.jpg">
+	<p style="margin-top:20px">(logo2)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/logo2.jpg">
+	<p style="margin-top:20px">(logo3)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/logo3.jpg">
+	<p style="margin-top:20px">(logo4)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/logo4.jpg">
+	<p style="margin-top:20px">(logo5)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/logo5_QQliulanqi.jpg">
+	<p style="margin-top:20px">(logo6-QQ浏览器)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/logo6_hp.jpg">
+	<p style="margin-top:20px">(logo7-惠普)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/sound.jpg">
+	<p style="margin-top:20px">(logo8)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/baidu_carlife.jpg">
+	<p style="margin-top:20px">(logo9-百度carlife)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/baidu_music.jpg">
+	<p style="margin-top:20px">(logo10-百度音乐)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/baiduyun.jpg">
+	<p style="margin-top:20px">(logo11-百度云)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/switch.jpg">
+	<p style="margin-top:20px">(logo12-开关键)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/liantong.jpg">
+	<p style="margin-top:20px">((logo13-联通)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/apple.jpg">
+	<p style="margin-top:20px">((logo14-苹果)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/weixin.jpg">
+	<p style="margin-top:20px">((logo15-微信)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/china_bank.jpg">
+	<p style="margin-top:20px">(logo16-中国银行)</p>
+</div>
+
+
+<br><br><br>
+<h2><b style="border-bottom:solid">插图作品</b></h2>
 <br>
-![ai_work](../../images/ai/dolphin.jpg)<br>(插画1-海豚)<br><br>
-![ai_work](../../images/ai/picture1.jpg)<br>(插画2-黑白线条插画1-蝉)<br><br>
-![ai_work](../../images/ai/picture2.jpg)<br>(插画3-黑白线条插画2)<br><br>
-![ai_work](../../images/ai/picture3.jpg)<br>(插画4-黑白线条插画-猫头鹰)<br><br>
-![ai_work](../../images/ai/lion.jpg)<br>(插画5-狮子)<br><br>
+<div style="margin:50px auto">
+	<img src="../../images/ai/dolphin.jpg">
+	<p style="margin-top:20px">(插画1-海豚)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/picture1.jpg">
+	<p style="margin-top:20px">(插画2-黑白线条插画1-蝉)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/picture2.jpg">
+	<p style="margin-top:20px">(插画3-黑白线条插画2)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/picture3.jpg">
+	<p style="margin-top:20px">(插画4-黑白线条插画-猫头鹰)</p>
+</div>
+
+<div style="margin:50px auto">
+	<img src="../../images/ai/lion.jpg">
+	<p style="margin-top:20px">((插画5-狮子)</p>
+</div>
+
